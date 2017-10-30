@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="0dp"
+    android:paddingTop="16dp"
+    tools:context="czestkowski.com.ruda.MainActivity"
+    android:nestedScrollingEnabled="false"
+    android:background="#dbffd6">
+
+
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button1G"
+        android:onClick="G1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button1K"
+        android:onClick="K1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button1G"
+        android:layout_toEndOf="@+id/button1G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button2G"
+        android:onClick="G2"
+        android:layout_below="@+id/button1G"
+        android:layout_alignRight="@+id/button1G"
+        android:layout_alignEnd="@+id/button1G"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button2K"
+        android:onClick="K2"
+        android:layout_below="@+id/button1K"
+        android:layout_toRightOf="@+id/button1G"
+        android:layout_toEndOf="@+id/button1G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button3G"
+        android:onClick="G3"
+        android:layout_below="@+id/button2G"
+        android:layout_alignLeft="@+id/button2G"
+        android:layout_alignStart="@+id/button2G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button3K"
+        android:onClick="K3"
+        android:layout_below="@+id/button2K"
+        android:layout_alignLeft="@+id/button2K"
+        android:layout_alignStart="@+id/button2K" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Zdjęcie zęba \n20 zł"
+        android:id="@+id/textView"
+        android:layout_above="@+id/button2K"
+        android:layout_toRightOf="@+id/button1K"
+        android:layout_toEndOf="@+id/button1K"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Zdjęcie zgryzowe \n30 zł"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/button2K"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Zdjęcie zatok \n65 zł"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/button3K"
+        android:layout_toRightOf="@+id/button3K"
+        android:layout_toEndOf="@+id/button3K"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button4G"
+        android:onClick="G4"
+        android:layout_below="@+id/button3G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button4K"
+        android:onClick="K4"
+        android:layout_below="@+id/button3K"
+        android:layout_toRightOf="@+id/button3G"
+        android:layout_toEndOf="@+id/button3G" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Panorama \n65 zł"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/button4K"
+        android:layout_toRightOf="@+id/button4K"
+        android:layout_toEndOf="@+id/button4K"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button5G"
+        android:onClick="G5"
+        android:layout_below="@+id/button13G"
+        android:layout_toLeftOf="@+id/button6K"
+        android:layout_toStartOf="@+id/button6K" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button5K"
+        android:onClick="K5"
+        android:layout_alignTop="@+id/button5G"
+        android:layout_toRightOf="@+id/button5G"
+        android:layout_toEndOf="@+id/button5G" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cefalo \n65 zł"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/button5K"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button6G"
+        android:onClick="G6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button15G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button6K"
+        android:onClick="K6"
+        android:layout_alignTop="@+id/button6G"
+        android:layout_toRightOf="@+id/button6G"
+        android:layout_toEndOf="@+id/button6G" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="St. skroniowo-żuchwowych \n65 zł"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/button6K"
+        android:layout_alignLeft="@+id/textView"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button7G"
+        android:onClick="G7"
+        android:layout_below="@+id/button22G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button7K"
+        android:onClick="K7"
+        android:layout_alignTop="@+id/button7G"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Komplet \n120 zł"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/button16K"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button8G"
+        android:onClick="G8"
+        android:layout_below="@+id/button17G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button8K"
+        android:onClick="K8"
+        android:layout_alignTop="@+id/button8G"
+        android:layout_toLeftOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TK odc/okolicy zęba \n130 zł"
+        android:id="@+id/textView8"
+        android:layout_alignBottom="@+id/button8K"
+        android:layout_toRightOf="@+id/button8K"
+        android:layout_toEndOf="@+id/button8K"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button9G"
+        android:onClick="G9"
+        android:layout_below="@+id/button8G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button9K"
+        android:onClick="K9"
+        android:layout_alignTop="@+id/button9G"
+        android:layout_toRightOf="@+id/button9G"
+        android:layout_toEndOf="@+id/button9G" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TK 1 łuku zębowego \n195zł"
+        android:id="@+id/textView9"
+        android:layout_alignBottom="@+id/button9K"
+        android:layout_toRightOf="@+id/button9K"
+        android:layout_toEndOf="@+id/button9K"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button10G"
+        android:onClick="G10"
+        android:layout_below="@+id/button9G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button10K"
+        android:onClick="K10"
+        android:layout_alignTop="@+id/button10G"
+        android:layout_toRightOf="@+id/button10G"
+        android:layout_toEndOf="@+id/button10G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button11G"
+        android:onClick="G11"
+        android:layout_below="@+id/button10G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button11K"
+        android:onClick="K11"
+        android:layout_below="@+id/button10K"
+        android:layout_toLeftOf="@+id/textView9"
+        android:layout_toStartOf="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TK 2 łuków \n390 zł"
+        android:id="@+id/textView10"
+        android:layout_above="@+id/button11K"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dodatkowe CD/Klisza \n10 zł"
+        android:id="@+id/textView11"
+        android:layout_alignBottom="@+id/button11K"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button12G"
+        android:layout_below="@+id/button4G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button12K"
+        android:layout_alignBottom="@+id/button12G"
+        android:layout_toRightOf="@+id/button12G"
+        android:layout_toEndOf="@+id/button12G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button13G"
+
+        android:layout_below="@+id/button12G"
+        android:layout_toLeftOf="@+id/button12K"
+        android:layout_toStartOf="@+id/button12K" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button13K"
+
+        android:layout_below="@+id/button12G"
+        android:layout_toRightOf="@+id/button12G"
+        android:layout_toEndOf="@+id/button12G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button14G"
+        android:onClick="K5"
+        android:layout_below="@+id/button5G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button14K"
+        android:onClick="K5"
+        android:layout_alignBottom="@+id/button14G"
+        android:layout_toRightOf="@+id/button14G"
+        android:layout_toEndOf="@+id/button14G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button15G"
+        android:onClick="K5"
+        android:layout_below="@+id/button14G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button15K"
+        android:onClick="K5"
+        android:layout_below="@+id/button14K"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button16G"
+        android:onClick="K7"
+        android:layout_below="@+id/button7G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button16K"
+        android:onClick="K7"
+        android:layout_below="@+id/button7G"
+        android:layout_toRightOf="@+id/button16G"
+        android:layout_toEndOf="@+id/button16G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button17G"
+        android:onClick="K7"
+        android:layout_below="@+id/button16G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button17K"
+        android:onClick="K7"
+
+        android:layout_below="@+id/button16G"
+        android:layout_toRightOf="@+id/button16G"
+        android:layout_toEndOf="@+id/button16G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button18G"
+        android:onClick="K7"
+        android:layout_below="@+id/button11G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button18K"
+        android:onClick="K7"
+        android:layout_alignBottom="@+id/button18G"
+        android:layout_toRightOf="@+id/button18G"
+        android:layout_toEndOf="@+id/button18G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button19G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button23G"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button19K"
+        android:layout_above="@+id/button20G"
+        android:layout_toRightOf="@+id/button19G"
+        android:layout_toEndOf="@+id/button19G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button20G"
+        android:layout_below="@+id/button19G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button20K"
+        android:layout_alignTop="@+id/button20G"
+        android:layout_toRightOf="@+id/button20G"
+        android:layout_toEndOf="@+id/button20G" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button21G"
+        android:layout_below="@+id/button20G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button21K"
+        android:layout_below="@+id/button20K"
+        android:layout_toRightOf="@+id/button21G"
+        android:layout_toEndOf="@+id/button21G" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/cat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button21G"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Panorama \n50 zł"
+        android:id="@+id/textView15"
+        android:layout_above="@+id/button13K"
+        android:layout_toRightOf="@+id/button12K"
+        android:layout_toEndOf="@+id/button12K"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Panorama \n45 zł"
+        android:id="@+id/textView16"
+
+        android:layout_above="@+id/button5K"
+        android:layout_alignLeft="@+id/textView15"
+        android:layout_alignStart="@+id/textView15"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cefalo \n50 zł"
+        android:id="@+id/textView17"
+        android:layout_alignBottom="@+id/button14K"
+        android:layout_toRightOf="@+id/button14K"
+        android:layout_toEndOf="@+id/button14K"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cefalo \n45 zł"
+        android:id="@+id/textView22"
+        android:layout_above="@+id/button6K"
+        android:layout_toRightOf="@+id/button6K"
+        android:layout_toEndOf="@+id/button6K"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Komplet \n100 zł"
+        android:id="@+id/textView23"
+        android:layout_above="@+id/button17K"
+        android:layout_toRightOf="@+id/button16K"
+        android:layout_toEndOf="@+id/button16K"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Komplet \n90 zł"
+        android:id="@+id/textView24"
+        android:layout_above="@+id/button8K"
+        android:layout_toRightOf="@+id/button17K"
+        android:layout_toEndOf="@+id/button17K"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dodatkowe CD/Klisza \n5 zł"
+        android:id="@+id/textView25"
+        android:textColor="#ff0000"
+        android:layout_alignBottom="@+id/button18K"
+        android:layout_toRightOf="@+id/button18K"
+        android:layout_toEndOf="@+id/button18K" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TK 2 Zatok \n250 zł"
+        android:id="@+id/textView26"
+        android:layout_alignBottom="@+id/button19K"
+        android:layout_toRightOf="@+id/button19K"
+        android:layout_toEndOf="@+id/button19K"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TK Ucha \n195 zł"
+        android:id="@+id/textView27"
+        android:layout_above="@+id/button21K"
+        android:layout_toRightOf="@+id/button20K"
+        android:layout_toEndOf="@+id/button20K"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TK 2 Uszu \n390 zł"
+        android:id="@+id/textView28"
+        android:layout_alignBottom="@+id/button21K"
+        android:layout_toRightOf="@+id/button21K"
+        android:layout_toEndOf="@+id/button21K"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Gotówka \n \nKarta"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/button21G"
+        android:layout_gravity="left"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button22G"
+        android:layout_below="@+id/button6G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button22K"
+        android:layout_below="@+id/button6G"
+        android:layout_toRightOf="@+id/button22G"
+        android:layout_toEndOf="@+id/button22G" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="St. skroniowo-żuchwowych \n50 zł"
+        android:id="@+id/textView30"
+        android:textColor="#ff0000"
+        android:layout_alignBottom="@+id/button22K"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button23G"
+        android:layout_below="@+id/button18G"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button18K"
+        android:layout_toStartOf="@+id/button18K" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button23K"
+        android:layout_below="@+id/button18K"
+        android:layout_toRightOf="@+id/button23G"
+        android:layout_alignRight="@+id/button18K"
+        android:layout_alignEnd="@+id/button18K" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TK Zatoki \n195 zł"
+        android:id="@+id/textView31"
+        android:textColor="#000000"
+        android:layout_above="@+id/button19K"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_toEndOf="@+id/textView29" />
+
+</RelativeLayout>
+</ScrollView>
